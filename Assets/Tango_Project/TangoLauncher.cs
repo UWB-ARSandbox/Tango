@@ -11,7 +11,7 @@ using UnityEngine;
 namespace UWBNetworkingPackage {
     public class TangoLauncher : AndroidLauncher {
         [PunRPC]
-        public override void SendMesh() {
+        public override void SendTangoMesh() {
             UpdateMesh();
 
             photonView.RPC("ReceiveTangoMesh", PhotonTargets.MasterClient, PhotonNetwork.player.ID);

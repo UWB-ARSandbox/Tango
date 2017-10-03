@@ -9,7 +9,7 @@ using Tango;
 using UnityEngine;
 
 namespace UWBNetworkingPackage {
-    public class TangoLauncher : AndroidLauncher {
+    public class TangoLauncher : Launcher {
         [PunRPC]
         public override void SendTangoMesh() {
             UpdateMesh();
